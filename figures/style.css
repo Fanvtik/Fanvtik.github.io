@@ -1,0 +1,97 @@
+.main1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    padding: 16px;
+    margin:0 auto;
+    width: 95%;
+  }
+ 
+.grid-item {
+    position: relative;
+    height:550px;
+    width: 1fr;
+    
+}
+
+.front,
+.back{
+    width: 90%;
+    height: 90%;
+
+    backface-visibility: hidden;
+
+    position: absolute;
+
+    transition: transform .6s linear;
+
+    background-color: #f0f0f0;
+   
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+    padding: 16px;
+
+    text-align: center;
+}
+.front{
+    transform: rotateY(0deg);
+}
+
+.back{
+    transform: rotateY(180deg);
+}
+.clicked > .front{
+    transform: rotateY(-180deg);
+}
+.clicked > .back{
+    transform:  rotateY(0deg);
+}
+
+.i {
+    width: 200px;
+    height: 300px;
+    border: 1px solid black;
+    margin-top: 5px;
+    border-radius: 20px;
+  }
+
+.hh {
+    font-size: 18px;
+    width: 1fr;
+}
+@media (min-width: 640px) and (max-width: 1079px) {
+    .main1 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+        padding: 16px;
+        margin:0 auto;
+        width: 95%;
+      }
+     
+    .grid-item {
+        position: relative;
+        height:400px;
+        width: 1fr;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 639px) {
+    .main1 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 25px;
+        padding: 16px;
+        margin:0 auto;
+        width: 95%;
+      }
+     
+    .grid-item {
+        position: relative;
+        height:400px;
+        width: 1fr;
+    }
+}
+
