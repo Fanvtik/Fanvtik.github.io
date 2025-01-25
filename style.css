@@ -118,7 +118,10 @@ nav {
 .navBar .open>div:nth-child(2) {
   overflow: hidden;
 }
-
+.navBar>a{
+  text-decoration: none;
+  color:indianred;
+}
 .navWin {
   width: 300px;
 
