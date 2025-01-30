@@ -45,6 +45,7 @@
      overflow-y: auto;
      text-align: justify;
 }
+
 .clicked > .front{
     transform: rotateY(-180deg);
 }
