@@ -43,7 +43,6 @@
 .back{
     transform: rotateY(180deg);
      overflow-y: auto;
-     text-align: justify;
 }
 
 .clicked > .front{
@@ -94,7 +93,7 @@
      
     .grid-item {
         position: relative;
-        height:400px;
+        height:600px;
         width: 1fr;
     }
 }
