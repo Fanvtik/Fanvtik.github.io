@@ -55,7 +55,10 @@ header a {
   align-items: center;
   gap: 5px;
 }
-
+.up {
+width: 50px;
+background-color: #17a2b8 !important;
+}
 nav {
   position: relative;
   height: 200px;
