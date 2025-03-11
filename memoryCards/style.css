@@ -1,4 +1,4 @@
-.main1 {
+main {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 25px;
@@ -65,7 +65,7 @@
     width: 1fr;
 }
 @media (min-width: 640px) and (max-width: 1079px) {
-    .main1 {
+    main {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 25px;
@@ -82,7 +82,7 @@
 }
 
 @media (min-width: 320px) and (max-width: 639px) {
-    .main1 {
+   main {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 25px;
